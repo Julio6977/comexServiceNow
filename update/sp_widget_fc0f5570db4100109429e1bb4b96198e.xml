@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($rootScope,$scope, spUtil) {
+	/* widget controller */
+	var c = this;
+	
+	spUtil.addInfoMessage("Welcome to the Comex Page")
+	
+	c.selectItem = function(idx) {
+		var id = c.data.request[idx].sys_id;
+		console.log('Request ID: ' + id);
+		$rootScope.requestID = id;
+		$rootScope.$emit('selectRequest', id);
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>vacation_request_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Vacation Request List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	//create an array to populate with requests
+	data.request = [];
+	var requestV = new GlideRecord('x_420177_comex_vacation_rquest');
+
+	requestV.addQuery('sys_created_by', gs.getUserName());
+	requestV.orderByDesc('sys_created_on');
+	requestV.query();
+	console.log(requestV);
+	while (requestV.next()) {
+		var requestObj = {};
+
+		//use service portal helper method to get some display values
+		$sp.getRecordDisplayValues(requestObj, requestV, 'u_user_request, u_integer_days, sys_id');
+		
+		//push the populated obj into the array
+		data.request.push(requestObj);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-08 18:51:48</sys_created_on>
+        <sys_id>fc0f5570db4100109429e1bb4b96198e</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>Vacation Request List</sys_name>
+        <sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope>
+        <sys_update_name>sp_widget_fc0f5570db4100109429e1bb4b96198e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-11 22:25:01</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h3 class="panel-title pull-left">
+      ${Request}
+    </h3>
+  </div>
+  <div class="list-group">
+    <a class="list-group-item" ng-click="c.selectItem($index)" ng-repeat="r in data.request">
+      <h4 class="list-group-item-heading">
+        {{r.u_user_request}}
+      </h4>
+      <p class="list-group-item-text">
+        {{r.u_integer_days}}
+      </p>
+    </a>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

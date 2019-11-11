@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Vacation Rquest" max_length="40" name="x_420177_comex_vacation_rquest" type="collection">
+        <element attributes="encode_utf8=false" label="Boss" mandatory="true" max_length="32" name="u_boss" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="u_glide_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="u_glide_start_date" type="glide_date"/>
+        <element label="Available Days" mandatory="true" max_length="40" name="u_integer_days" type="integer"/>
+        <element label="User Name" mandatory="true" max_length="80" name="u_user_name" type="field_name"/>
+        <element attributes="encode_utf8=false" label="User Request" mandatory="true" max_length="32" name="u_user_request" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_boss"/>
+        </index>
+        <index name="index2">
+            <element name="u_user_request"/>
+        </index>
+    </element>
+</database>

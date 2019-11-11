@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Test Hello World 1 - Test Page - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="test_hello_world_1">4f4d4d70db0100109429e1bb4b961931</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-08 17:34:24</sys_created_on>
+        <sys_id>cf4d81b0db0100109429e1bb4b961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Hello World 1 - Test Page - Container 1</sys_name>
+        <sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope>
+        <sys_update_name>sp_container_cf4d81b0db0100109429e1bb4b961973</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-08 17:34:24</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Comex">f0fcf244db4100109429e1bb4b961924</application>
+        <file_path/>
+        <instance_id>d35cf45adbb06bc052e3f70fbf9619f9</instance_id>
+        <instance_name>dev71296</instance_name>
+        <name>sp_container_cf4d81b0db0100109429e1bb4b961973</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Test Hello World 1 - Test Page - Container 1</name><order>1</order><sp_page display_value="test_hello_world_1">4f4d4d70db0100109429e1bb4b961931</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-11-08 17:34:24</sys_created_on><sys_id>cf4d81b0db0100109429e1bb4b961973</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Test Hello World 1 - Test Page - Container 1</sys_name><sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package><sys_policy/><sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope><sys_update_name>sp_container_cf4d81b0db0100109429e1bb4b961973</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-11-08 17:34:24</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-1913648509</payload_hash>
+        <record_name>Test Hello World 1 - Test Page - Container 1</record_name>
+        <reverted_from/>
+        <source>cdfcf244db4100109429e1bb4b961926</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-08 17:34:24</sys_created_on>
+        <sys_id>434d81b0db0100109429e1bb4b961976</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e4c14d8720000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-08 17:34:24</sys_updated_on>
+        <type>Container</type>
+        <update_guid>8b4d81b05d010010327845e1b00e3575</update_guid>
+        <update_guid_history>8b4d81b05d010010327845e1b00e3575:-1913648509</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Test Hello World 1 - Test Page - Container 1">0afd1170db4100109429e1bb4b96194f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-08 18:47:15</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>2dbc849a7b544e78ad1210ece0367040</sys_id>
+        <sys_metadata>cf4d81b0db0100109429e1bb4b961973</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Hello World 1 - Test Page - Container 1</sys_name>
+        <sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope>
+        <sys_scope_delete display_value="">03212c5594c2446a89b5161c95b9dbe4</sys_scope_delete>
+        <sys_update_name>sp_container_cf4d81b0db0100109429e1bb4b961973</sys_update_name>
+        <sys_update_version display_value="sp_container_cf4d81b0db0100109429e1bb4b961973">434d81b0db0100109429e1bb4b961976</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-08 18:47:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

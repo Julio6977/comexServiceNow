@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Comex Users">09ae7b04db4500109429e1bb4b9619bb</application>
+        <filter/>
+        <name>Comex Users</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_420177_comex.comex_users_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-06 22:33:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05ae7b04db4500109429e1bb4b9619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comex Users</sys_name>
+        <sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope>
+        <sys_update_name>sys_ui_module_05ae7b04db4500109429e1bb4b9619bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 22:33:48</sys_updated_on>
+        <table>x_420177_comex_comex_users</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Comex">f0fcf244db4100109429e1bb4b961924</application>
+        <file_path/>
+        <instance_id>d35cf45adbb06bc052e3f70fbf9619f9</instance_id>
+        <instance_name>dev71296</instance_name>
+        <name>sys_ui_module_05ae7b04db4500109429e1bb4b9619bd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Comex Users">09ae7b04db4500109429e1bb4b9619bb</application><filter/><name>Comex Users</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_420177_comex.comex_users_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-11-06 22:33:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>05ae7b04db4500109429e1bb4b9619bd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Comex Users</sys_name><sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package><sys_policy/><sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope><sys_update_name>sys_ui_module_05ae7b04db4500109429e1bb4b9619bd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-11-06 22:33:48</sys_updated_on><table>x_420177_comex_comex_users</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>937192069</payload_hash>
+        <record_name>Comex Users</record_name>
+        <reverted_from/>
+        <source>cdfcf244db4100109429e1bb4b961926</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-06 22:33:48</sys_created_on>
+        <sys_id>c1ae7b04db4500109429e1bb4b9619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e42da3a890000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 22:33:48</sys_updated_on>
+        <type>Module</type>
+        <update_guid>45ae7b04f6450010585a2a0cd2c997be</update_guid>
+        <update_guid_history>45ae7b04f6450010585a2a0cd2c997be:937192069</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-06 22:37:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>40b070b9001548daa1309d04d3503424</sys_id>
+        <sys_metadata>05ae7b04db4500109429e1bb4b9619bd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comex Users</sys_name>
+        <sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope>
+        <sys_scope_delete display_value="">03212c5594c2446a89b5161c95b9dbe4</sys_scope_delete>
+        <sys_update_name>sys_ui_module_05ae7b04db4500109429e1bb4b9619bd</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_05ae7b04db4500109429e1bb4b9619bd">c1ae7b04db4500109429e1bb4b9619cb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 22:37:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

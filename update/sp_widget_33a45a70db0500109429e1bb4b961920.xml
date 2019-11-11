@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope,$rootScope) {
+		/* OBTIENE LA INFORMACION DEL WIDGET (VACATION REQUEST) */
+		var c = this;
+	
+		$rootScope.$on('selectRequest', function(event,data) {
+			c.server.get({
+				action: 'getRequest',
+				requestID: $rootScope.requestID
+			}).then(function(r) {
+				c.data.usrRequest = r.data.request.u_user_request;
+				c.data.avlblDays  = r.data.request.u_integer_days;
+				c.data.requestID  = r.data.request.sys_id;
+			});
+		});
+	
+		/* ACTUALIZA LA INFORMACION DE LA TABLA (VACATION REQUEST) EN LA BD */
+		c.updateRequest = function(updateType) {
+			c.server.get({
+				action: 'updateRequest',
+				requestID: c.data.requestID,
+				avlblDays: c.data.avlblDays,
+				usrRequest: c.data.usrRequest
+			}).then(function(r) {
+			});
+		}
+	}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>vacation_request_form</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Vacation Request Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+		/* populate the 'data' object */
+
+		if (input && input.requestID) {
+			var request = new GlideRecord('x_420177_comex_vacation_rquest');
+			if (request.get(input.requestID)) {
+				if (input.action == 'getRequest') {
+					data.request = {};
+					$sp.getRecordDisplayValues(data.request, request, 'u_user_request, u_integer_days, sys_id');
+				}
+				else if (input.action == 'updateRequest') { 
+					request.u_user_request = input.usrRequest; 
+					request.u_integer_days = input.avlblDays; 
+					request.update();
+					console.log(request);
+				}
+			}
+		}
+	})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-08 22:46:18</sys_created_on>
+        <sys_id>33a45a70db0500109429e1bb4b961920</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Vacation Request Form</sys_name>
+        <sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope>
+        <sys_update_name>sp_widget_33a45a70db0500109429e1bb4b961920</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-08 23:51:01</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default" ng-show="c.data.requestID">
+  <div class="panel-heading clearfix">
+    <div class="row">
+      <div class="col-md-12">
+        <input class="form-control" id="request-user" ng-model="c.data.usrRequest" ng-change="c.updateRequest('usrRequest')" ng-model-options="{debounce: 1000}"/>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <textarea class="form-control" id="request-days" ng-model="c.data.avlblDays" ng-change="c.updateRequest('avlblDays')" ng-model-options="{debounce: 1000}"></textarea>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

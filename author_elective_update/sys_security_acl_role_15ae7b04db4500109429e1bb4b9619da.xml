@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-06 22:33:48</sys_created_on>
+        <sys_id>15ae7b04db4500109429e1bb4b9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_420177_comex_comex_users.x_420177_comex.comex_users_user</sys_name>
+        <sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope>
+        <sys_security_acl display_value="x_420177_comex_comex_users">95ae7b04db4500109429e1bb4b9619d7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_15ae7b04db4500109429e1bb4b9619da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 22:33:48</sys_updated_on>
+        <sys_user_role display_value="x_420177_comex.comex_users_user" name="x_420177_comex.comex_users_user">41aefb80db4500109429e1bb4b961984</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Comex">f0fcf244db4100109429e1bb4b961924</application>
+        <file_path/>
+        <instance_id>d35cf45adbb06bc052e3f70fbf9619f9</instance_id>
+        <instance_name>dev71296</instance_name>
+        <name>sys_security_acl_role_15ae7b04db4500109429e1bb4b9619da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-11-06 22:33:48</sys_created_on><sys_id>15ae7b04db4500109429e1bb4b9619da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_420177_comex_comex_users.x_420177_comex.comex_users_user</sys_name><sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package><sys_policy/><sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope><sys_security_acl display_value="x_420177_comex_comex_users">95ae7b04db4500109429e1bb4b9619d7</sys_security_acl><sys_update_name>sys_security_acl_role_15ae7b04db4500109429e1bb4b9619da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-11-06 22:33:48</sys_updated_on><sys_user_role display_value="x_420177_comex.comex_users_user" name="x_420177_comex.comex_users_user">41aefb80db4500109429e1bb4b961984</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>456505553</payload_hash>
+        <record_name>x_420177_comex_comex_users.x_420177_comex.comex_users_user</record_name>
+        <reverted_from/>
+        <source>cdfcf244db4100109429e1bb4b961926</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-06 22:33:48</sys_created_on>
+        <sys_id>d9ae7b04db4500109429e1bb4b9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e42da3b690000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 22:33:48</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>15ae7b0450450010fca4a86f414970dc</update_guid>
+        <update_guid_history>15ae7b0450450010fca4a86f414970dc:456505553</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_420177_comex_comex_users.x_420177_comex.comex_users_user">238fbb44db4500109429e1bb4b961925</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-06 22:37:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>26316c9badea400890c0389c652f0b10</sys_id>
+        <sys_metadata>15ae7b04db4500109429e1bb4b9619da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_420177_comex_comex_users.x_420177_comex.comex_users_user</sys_name>
+        <sys_package display_value="Comex" source="x_420177_comex">f0fcf244db4100109429e1bb4b961924</sys_package>
+        <sys_parent display_value="">95ae7b04db4500109429e1bb4b9619d7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Comex">f0fcf244db4100109429e1bb4b961924</sys_scope>
+        <sys_scope_delete display_value="">03212c5594c2446a89b5161c95b9dbe4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_15ae7b04db4500109429e1bb4b9619da</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_15ae7b04db4500109429e1bb4b9619da">d9ae7b04db4500109429e1bb4b9619dc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 22:37:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
